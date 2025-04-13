@@ -1,0 +1,68 @@
+{"level":"error","module":"api","error":"Неверный формат роли пользователя","time":"2025-04-12T14:52:56+03:00","message":"failed to auth user"}
+{"level":"error","module":"api","error":"Неверный формат роли пользователя","time":"2025-04-12T14:53:12+03:00","message":"failed to auth user"}
+{"level":"error","module":"api","error":"Неверный формат роли пользователя","time":"2025-04-12T14:53:21+03:00","message":"failed to auth user"}
+{"level":"error","module":"api","error":"Неверный формат роли пользователя","time":"2025-04-12T14:55:19+03:00","message":"failed to auth user"}
+{"level":"error","module":"api","error":"email: failed to pass regex validation","time":"2025-04-12T14:59:18+03:00","message":"failed to parse request body"}
+{"level":"error","module":"repository","error":"ERROR: column \"username\" of relation \"users\" does not exist (SQLSTATE 42703)","time":"2025-04-12T15:00:00+03:00","message":"CreateUser: failed to execute query"}
+{"level":"error","module":"service","error":"rpc error: code = Internal desc = failed to create user: ERROR: column \"username\" of relation \"users\" does not exist (SQLSTATE 42703)","time":"2025-04-12T15:00:00+03:00","message":"failed to create new user in storage"}
+{"level":"error","module":"api","error":"rpc error: code = Internal desc = failed to create user: ERROR: column \"username\" of relation \"users\" does not exist (SQLSTATE 42703)","time":"2025-04-12T15:00:00+03:00","message":"failed to create user"}
+{"level":"warn","module":"repository","email":"2@mail.ru","time":"2025-04-12T15:02:12+03:00","message":"LoginUser: user not found"}
+{"level":"error","module":"api","error":"пользователя с данным email не существует","time":"2025-04-12T15:02:12+03:00","message":"failed to auth user"}
+{"level":"error","module":"service","error":"crypto/bcrypt: hashedSecret too short to be a bcrypted password","time":"2025-04-12T15:02:20+03:00","message":"password mismatch"}
+{"level":"error","module":"api","error":"неверный логин или пароль","time":"2025-04-12T15:02:20+03:00","message":"failed to auth user"}
+{"level":"error","module":"api","error":"email: failed to pass regex validation","time":"2025-04-12T15:02:29+03:00","message":"failed to parse request body"}
+{"level":"error","module":"service","error":"crypto/bcrypt: hashedSecret too short to be a bcrypted password","time":"2025-04-12T15:02:43+03:00","message":"password mismatch"}
+{"level":"error","module":"api","error":"неверный логин или пароль","time":"2025-04-12T15:02:43+03:00","message":"failed to auth user"}
+{"level":"error","module":"service","error":"crypto/bcrypt: hashedSecret too short to be a bcrypted password","time":"2025-04-12T15:02:58+03:00","message":"password mismatch"}
+{"level":"error","module":"api","error":"неверный логин или пароль","time":"2025-04-12T15:02:58+03:00","message":"failed to auth user"}
+{"level":"error","module":"service","error":"crypto/bcrypt: hashedPassword is not the hash of the given password","time":"2025-04-12T15:04:26+03:00","message":"password mismatch"}
+{"level":"error","module":"api","error":"неверный логин или пароль","time":"2025-04-12T15:04:26+03:00","message":"failed to auth user"}
+{"level":"error","module":"repository","error":"ERROR: null value in column \"user_id\" of relation \"pvz\" violates not-null constraint (SQLSTATE 23502)","time":"2025-04-12T18:57:28+03:00","message":"CreatePVZ: failed to execute query"}
+{"level":"error","module":"api","error":"укажите почту","time":"2025-04-12T19:42:56+03:00","message":"failed to create user"}
+{"level":"error","module":"repository","error":"ERROR: insert or update on table \"pvz\" violates foreign key constraint \"fk_pvz_user\" (SQLSTATE 23503)","time":"2025-04-12T19:43:26+03:00","message":"CreatePVZ: failed to execute query"}
+{"level":"error","module":"repository","error":"can't scan into dest[1]: Scan: invalid UUID length: 12","time":"2025-04-12T19:44:46+03:00","message":"CreatePVZ: failed to execute query"}
+{"level":"error","module":"repository","error":"can't scan into dest[1]: Scan: invalid UUID length: 12","time":"2025-04-12T19:45:58+03:00","message":"CreatePVZ: failed to execute query"}
+{"level":"error","module":"api","time":"2025-04-12T22:05:26+03:00","message":"user is not employee"}
+{"level":"error","module":"api","error":"Неверный формат роли пользователя","time":"2025-04-12T22:05:53+03:00","message":"failed to create user"}
+{"level":"error","module":"repository","error":"ERROR: column \"pbz_id\" of relation \"receptions\" does not exist (SQLSTATE 42703)","time":"2025-04-12T22:06:27+03:00","message":"CreateReception: failed to execute query"}
+{"level":"error","module":"api","error":"invalid UUID length: 37","time":"2025-04-12T22:08:45+03:00","message":"failed to parse request body"}
+{"level":"error","module":"repository","error":"ERROR: insert or update on table \"receptions\" violates foreign key constraint \"fk_reception_pvz\" (SQLSTATE 23503)","time":"2025-04-12T22:08:52+03:00","message":"CreateReception: failed to execute query"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: ошибка при создании новой приёмки товаров","time":"2025-04-12T22:08:52+03:00","message":"failed to create new reception"}
+{"level":"error","module":"repository","error":"ERROR: insert or update on table \"receptions\" violates foreign key constraint \"fk_reception_pvz\" (SQLSTATE 23503)","time":"2025-04-12T22:09:22+03:00","message":"CreateReception: failed to execute query"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: ошибка при создании новой приёмки товаров","time":"2025-04-12T22:09:22+03:00","message":"failed to create new reception"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: невозможно начать новую приёмку товаров, пока не будет закрыта текущая","time":"2025-04-12T22:09:36+03:00","message":"failed to create new reception"}
+{"level":"error","module":"api","time":"2025-04-13T12:09:02+03:00","message":"user is not moderator"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: невозможно начать новую приёмку товаров, пока не будет закрыта текущая","time":"2025-04-13T12:12:00+03:00","message":"failed to create new reception"}
+{"level":"error","module":"api","error":"данный тип товара не поддерживается","time":"2025-04-13T12:13:40+03:00","message":"failed to create new reception"}
+{"level":"error","module":"api","error":"invalid UUID length: 35","time":"2025-04-13T12:14:05+03:00","message":"failed to parse request body"}
+{"level":"error","module":"api","error":"invalid UUID length: 37","time":"2025-04-13T12:14:13+03:00","message":"failed to parse request body"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: небходимо создать новую приёмку товаров","time":"2025-04-13T12:14:21+03:00","message":"failed to create new reception"}
+{"level":"error","module":"repository","error":"no rows in result set","time":"2025-04-13T13:08:30+03:00","message":"GetLastProductIdByReceptionId: failed to execute query"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: в рамках текущей приёмки нет товаров для удаления","time":"2025-04-13T13:08:30+03:00","message":"failed to delete product"}
+{"level":"error","module":"repository","error":"ERROR: relation \"reception\" does not exist (SQLSTATE 42P01)","time":"2025-04-13T13:34:06+03:00","message":"CloseReceptionById: failed to execute query"}
+{"level":"error","module":"repository","error":"ERROR: column \"statu\" of relation \"receptions\" does not exist (SQLSTATE 42703)","time":"2025-04-13T13:35:09+03:00","message":"CloseReceptionById: failed to execute query"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: неверный запрос или приемка уже закрыта","time":"2025-04-13T13:35:09+03:00","message":"failed to close reception"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: небходимо создать новую приёмку товаров для данного ПВЗ","time":"2025-04-13T13:35:38+03:00","message":"failed to add a product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: небходимо создать новую приёмку товаров для данного ПВЗ","time":"2025-04-13T13:35:53+03:00","message":"failed to add a product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: приёмка товаров в данном ПВЗ закрыта, необходимо открыть новую","time":"2025-04-13T13:37:31+03:00","message":"failed to delete product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: небходимо создать новую приёмку товаров для данного ПВЗ","time":"2025-04-13T13:37:58+03:00","message":"failed to add a product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: приёмка товаров в данном ПВЗ закрыта, необходимо открыть новую","time":"2025-04-13T13:38:39+03:00","message":"failed to delete product"}
+{"level":"error","module":"repository","error":"ERROR: relation \"reception\" does not exist (SQLSTATE 42P01)","time":"2025-04-13T14:51:13+03:00","message":"GetFullPVZInfo: failed to scan rows"}
+{"level":"error","module":"repository","error":"ERROR: column r.closed_at does not exist (SQLSTATE 42703)","time":"2025-04-13T14:51:44+03:00","message":"GetFullPVZInfo: failed to scan rows"}
+{"level":"error","module":"repository","error":"ERROR: column r.closed_at does not exist (SQLSTATE 42703)","time":"2025-04-13T14:55:37+03:00","message":"GetFullPVZInfo: failed to scan rows"}
+{"level":"error","module":"repository","error":"scanning: scanning: doing scan: scanFn: scany: column: 'pvz_id': no corresponding field found, or it's unexported in repository.flatRow","time":"2025-04-13T14:56:47+03:00","message":"GetFullPVZInfo: failed to scan rows"}
+{"level":"error","module":"repository","error":"scanning: scanning: doing scan: scanFn: scany: scan row into struct fields: can't scan into dest[4]: cannot scan null into *string","time":"2025-04-13T14:58:17+03:00","message":"GetFullPVZInfo: failed to scan rows"}
+{"level":"error","module":"repository","error":"scanning: scanning: doing scan: scanFn: scany: scan row into struct fields: can't scan into dest[4]: cannot scan null into *string","time":"2025-04-13T14:58:37+03:00","message":"GetFullPVZInfo: failed to scan rows"}
+{"level":"error","module":"repository","error":"scanning: scanning: doing scan: scanFn: scany: scan row into struct fields: can't scan into dest[5]: cannot assign NULL to *time.Time","time":"2025-04-13T15:00:21+03:00","message":"GetFullPVZInfo: failed to scan rows"}
+{"level":"error","module":"repository","error":"ERROR: duplicate key value violates unique constraint \"users_email_key\" (SQLSTATE 23505)","time":"2025-04-13T17:27:03+03:00","message":"CreateUser: failed to execute query"}
+{"level":"error","module":"service","error":"rpc error: code = Internal desc = failed to create user: ERROR: duplicate key value violates unique constraint \"users_email_key\" (SQLSTATE 23505)","time":"2025-04-13T17:27:03+03:00","message":"failed to create new user in storage"}
+{"level":"error","module":"api","error":"rpc error: code = Internal desc = failed to create user: ERROR: duplicate key value violates unique constraint \"users_email_key\" (SQLSTATE 23505)","time":"2025-04-13T17:27:03+03:00","message":"failed to create user"}
+{"level":"error","module":"api","time":"2025-04-13T17:27:16+03:00","message":"user is not moderator"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: неверный запрос или нет активной приемки","time":"2025-04-13T19:00:09+03:00","message":"failed to add a product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: невозможно начать новую приёмку товаров, пока не будет закрыта текущая","time":"2025-04-13T19:00:16+03:00","message":"failed to create new reception"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: приёмка товаров в данном ПВЗ закрыта, необходимо открыть новую","time":"2025-04-13T19:00:30+03:00","message":"failed to delete product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: приёмка товаров в данном ПВЗ закрыта, необходимо открыть новую","time":"2025-04-13T19:00:49+03:00","message":"failed to delete product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: неверный запрос или нет активной приемки","time":"2025-04-13T19:01:21+03:00","message":"failed to add a product"}
+{"level":"error","module":"api","error":"failed executing code inside transaction: неверный запрос или нет активной приемки","time":"2025-04-13T19:01:24+03:00","message":"failed to add a product"}
+{"level":"error","module":"api","time":"2025-04-13T19:02:43+03:00","message":"user is not moderator"}
+{"level":"error","module":"api","time":"2025-04-13T19:03:09+03:00","message":"user is not moderator"}

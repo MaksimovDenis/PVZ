@@ -1,0 +1,58 @@
+services:
+  app_http:
+    build: ./pvz_http/
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    environment:
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: 8080
+      PG_DSN: postgres://postgres:password@db:5432/pvz?sslmode=disable
+      TOKEN_SECRET_KEY: "01234567890123456789012345678901"
+    networks:
+      - mynetwork
+
+  app_grpc:
+    build: ./pvz_grpc/
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - app_http
+    environment:
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: 3000
+      PG_DSN: postgres://postgres:password@db:5432/pvz?sslmode=disable
+      TOKEN_SECRET_KEY: "01234567890123456789012345678901"
+    networks:
+      - mynetwork
+
+
+  db:
+    restart: always
+    image: postgres:latest
+    volumes:
+      - ./db/init:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: pvz
+    ports:
+      - 5432:5432
+    networks:
+      - mynetwork
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./pvz_http/internal/config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus:/data:rw
+    ports:
+      - "9000:9000"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
