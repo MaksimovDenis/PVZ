@@ -50,7 +50,7 @@ services:
       - ./pvz_http/internal/config/prometheus.yml:/etc/prometheus/prometheus.yml
       - ./prometheus:/data:rw
     ports:
-      - "9000:9000"
+      - "9000:9090"
     networks:
       - mynetwork
 
